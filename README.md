@@ -36,6 +36,9 @@ Users should be able to:
 
 ## My process
 
+- I organize my html classes using double\_\_underscore and double--dash to improve readability. This can make it easier to keep track of parent and children elements when working with the css.
+- <img> always has an alt="", but is left empty if unnecessary.
+
 ### Built with
 
 - Semantic HTML5 markup
