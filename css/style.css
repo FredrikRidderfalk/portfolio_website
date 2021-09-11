@@ -9,8 +9,11 @@
   --ff-secondary: "Source Code Pro", monospace;
 }
 
+/* Section titles with gradient animations */
 .section__title--container {
   width: fit-content;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .section__title--services::before {
@@ -23,23 +26,21 @@
 
 .section__title--services:hover::before {
   content: "";
-  background: linear-gradient(to left, purple, cyan);
+  background: linear-gradient(to right, purple, cyan);
   display: block;
   width: 120px;
   height: 4px;
-  animation-duration: 3s;
-  animation-name: slideright;
+  animation: slideright 3s ease;
 }
 
 @keyframes slideright {
   from {
-    margin-left: 0%;
-    width: 100%;
+    width: 120px;
+    margin: 0px;
   }
-
   to {
-    margin-left: 30%;
-    width: 120%;
+    width: 80px;
+    margin: 0 0 0 100px;
   }
 }
 
@@ -53,8 +54,21 @@
 
 .section__title--services:hover::after {
   content: "";
-  background: linear-gradient(to right, purple, cyan);
+  background: linear-gradient(to left, purple, cyan);
   display: block;
   width: 120px;
   height: 4px;
+  animation: slideleft 3s ease;
+}
+
+@keyframes slideleft {
+  from {
+    width: 120px;
+    margin: 0px;
+  }
+
+  to {
+    width: 80px;
+    margin: 0 100px 0 0;
+  }
 }
