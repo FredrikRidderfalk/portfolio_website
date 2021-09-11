@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+}
+
+.section__title--container {
+  width: fit-content;
+}
+
+.section__title--services::before {
+  content: "";
+  background: linear-gradient(to right, purple, cyan);
+  display: block;
+  width: 120px;
+  height: 4px;
+}
+
+.section__title--services:hover::before {
+  content: "";
+  background: linear-gradient(to left, purple, cyan);
+  display: block;
+  width: 120px;
+  height: 4px;
+  animation-duration: 3s;
+  animation-name: slideright;
+}
+
+@keyframes slideright {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 30%;
+    width: 120%;
+  }
+}
+
+.section__title--services::after {
+  content: "";
+  background: linear-gradient(to left, purple, cyan);
+  display: block;
+  width: 120px;
+  height: 4px;
+}
+
+.section__title--services:hover::after {
+  content: "";
+  background: linear-gradient(to right, purple, cyan);
+  display: block;
+  width: 120px;
+  height: 4px;
+}
