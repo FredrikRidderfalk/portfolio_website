@@ -22,6 +22,8 @@
   display: block;
   width: 120px;
   height: 4px;
+  transition: all 2s;
+  opacity: 0.5;
 }
 
 .section__title--services:hover::before {
@@ -30,7 +32,14 @@
   display: block;
   width: 120px;
   height: 4px;
-  animation: slideright 3s ease;
+  opacity: 1;
+  /* animation: slideright 3s ease; */
+  animation-name: slideright;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+
+  /* animation-direction is not working, so maybe try transition without using @keyframes */
+  animation-direction: alternate;
 }
 
 @keyframes slideright {
@@ -50,6 +59,8 @@
   display: block;
   width: 120px;
   height: 4px;
+  transition: all 2s;
+  opacity: 0.5;
 }
 
 .section__title--services:hover::after {
@@ -58,7 +69,14 @@
   display: block;
   width: 120px;
   height: 4px;
-  animation: slideleft 3s ease;
+  opacity: 1;
+  /* animation: slideleft 3s ease; */
+  animation-name: slideleft;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+
+  /* animation-direction is not working, so maybe try transition without using @keyframes */
+  animation-direction: alternate;
 }
 
 @keyframes slideleft {
