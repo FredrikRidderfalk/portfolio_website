@@ -18,75 +18,39 @@
 
 .section__title--services::before {
   content: "";
-  background: linear-gradient(to right, purple, cyan);
+  background: linear-gradient(to right, transparent, cyan 60%, magenta);
   display: block;
   width: 120px;
-  height: 4px;
-  transition: all 2s;
-  opacity: 0.5;
+  height: 3px;
+  transition: all 3s;
+  opacity: 0.25;
 }
 
 .section__title--services:hover::before {
   content: "";
-  background: linear-gradient(to right, purple, cyan);
+  background: linear-gradient(to right, transparent, cyan 60%, magenta);
   display: block;
   width: 120px;
-  height: 4px;
+  height: 3px;
   opacity: 1;
-  /* animation: slideright 3s ease; */
-  animation-name: slideright;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-
-  /* animation-direction is not working, so maybe try transition without using @keyframes */
-  animation-direction: alternate;
-}
-
-@keyframes slideright {
-  from {
-    width: 120px;
-    margin: 0px;
-  }
-  to {
-    width: 80px;
-    margin: 0 0 0 100px;
-  }
+  margin-left: 100px;
 }
 
 .section__title--services::after {
   content: "";
-  background: linear-gradient(to left, purple, cyan);
+  background: linear-gradient(to left, transparent, cyan 60%, magenta);
   display: block;
   width: 120px;
-  height: 4px;
-  transition: all 2s;
-  opacity: 0.5;
+  height: 3px;
+  transition: all 3s;
+  opacity: 0.25;
 }
 
 .section__title--services:hover::after {
   content: "";
-  background: linear-gradient(to left, purple, cyan);
+  background: linear-gradient(to left, transparent, cyan 60%, magenta);
   display: block;
   width: 120px;
-  height: 4px;
+  height: 3px;
   opacity: 1;
-  /* animation: slideleft 3s ease; */
-  animation-name: slideleft;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-
-  /* animation-direction is not working, so maybe try transition without using @keyframes */
-  animation-direction: alternate;
-}
-
-@keyframes slideleft {
-  from {
-    width: 120px;
-    margin: 0px;
-  }
-
-  to {
-    width: 80px;
-    margin: 0 100px 0 0;
-  }
 }

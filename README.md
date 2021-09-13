@@ -52,9 +52,13 @@ Users should be able to:
 
 ### What I learned
 
+How I can work with the css pseudo-elements ::before and ::after. They don't need to be written with double ::, one : will still run, but standard practice nowadays is to use the double ::.
+
 <!-- - How to work with if/else statements.
 - How to work with for-loops.
 - Practiced working with logical operators. -->
+
+Instead of trying to make an animation using the animation property and @keyframes, I used transition.
 
 <!-- ```html
 <h1>Some HTML code I'm proud of</h1>
