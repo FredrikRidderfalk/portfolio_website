@@ -19,6 +19,9 @@
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 800px) {
@@ -43,6 +46,112 @@ body {
   line-height: 1.6;
 }
 
+section {
+  padding: 5em 2em;
+}
+
+img {
+  /* Setting images to display: block; gets rid of some common issues with images, and setting the max-width: 100% prevents them from overflowing their parents */
+  display: block;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  /* In case headings break onto a second line */
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+  display: block;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: var(--clr-accent);
+  padding: 0.25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+
+/* Header */
+
+nav {
+  display: none;
+}
+
+/* Intro section */
+
+.intro {
+  position: relative;
+}
+
+.intro__img {
+  box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    text-transform: uppercase;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+  }
+}
+
 /* Section titles with gradient animations */
 .section__title--container {
   width: fit-content;
@@ -50,41 +159,83 @@ body {
   text-align: center;
 }
 
-.section__title--services::before {
+.section__title--container::before {
+  content: "";
+  background: linear-gradient(to right, transparent 20%, cyan, magenta);
+  display: block;
+  width: 100%;
+  height: 4px;
+  transition: all 3s;
+  opacity: 0.25;
+  margin-right: 250px;
+}
+
+.section__title--container:hover::before {
+  content: "";
+  background: linear-gradient(to right, transparent 20%, cyan, magenta);
+  display: block;
+  width: 100%;
+  height: 4px;
+  transition: all 3s;
+  opacity: 1;
+  margin-right: 320px;
+}
+
+.section__title--container::after {
+  content: "";
+  background: linear-gradient(to left, transparent 20%, cyan, magenta);
+  display: block;
+  width: 100%;
+  height: 4px;
+  transition: all 3s;
+  opacity: 0.25;
+}
+
+.section__title--container:hover::after {
+  content: "";
+  background: linear-gradient(to left, transparent 20%, cyan, magenta);
+  display: block;
+  width: 100%;
+  height: 4px;
+  transition: all 3s;
+  opacity: 1;
+}
+
+/* .section__title::before {
   content: "";
   background: linear-gradient(to right, transparent, cyan 60%, magenta);
   display: block;
-  width: 120px;
+  width: 320px;
   height: 3px;
   transition: all 3s;
   opacity: 0.25;
 }
 
-.section__title--services:hover::before {
+.section__title:hover::before {
   content: "";
   background: linear-gradient(to right, transparent, cyan 60%, magenta);
   display: block;
-  width: 120px;
+  width: 320px;
   height: 3px;
   opacity: 1;
-  margin-left: 100px;
+  margin-left: 300px;
 }
 
-.section__title--services::after {
+.section__title::after {
   content: "";
   background: linear-gradient(to left, transparent, cyan 60%, magenta);
   display: block;
-  width: 120px;
+  width: 320px;
   height: 3px;
   transition: all 3s;
   opacity: 0.25;
 }
 
-.section__title--services:hover::after {
+.section__title:hover::after {
   content: "";
   background: linear-gradient(to left, transparent, cyan 60%, magenta);
   display: block;
-  width: 120px;
+  width: 320px;
   height: 3px;
   opacity: 1;
-}
+} */
