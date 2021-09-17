@@ -14,6 +14,7 @@
   --clr-light: hsl(0, 0%, 100%);
   --clr-dark: hsl(0, 0%, 19%);
   --clr-accent: hsl(170, 82%, 48%);
+  --clr-accentTwo: hsl(276, 47%, 40%);
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -58,6 +59,31 @@ img {
 
 strong {
   font-weight: var(--fw-bold);
+}
+
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  cursor: pointer;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  font-weight: var(--fw-bold);
+  letter-spacing: 2px;
+  transition: all 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 /* Typography */
@@ -152,6 +178,44 @@ nav {
   }
 }
 
+/* My services section */
+
+.my-services {
+  background-color: hsl(0, 0%, 40%);
+  background-image: url(../img/services-bg.jpg);
+  background-size: cover;
+  color: var(--clr-light);
+  background-blend-mode: multiply;
+  text-align: center;
+}
+
+.section__title--services {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+.services {
+  margin-bottom: 3em;
+}
+
+.service {
+  margin: 3em auto 0;
+  max-width: 500px;
+}
+
+@media (min-width: 800px) {
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service + .service {
+    margin-left: 2em;
+  }
+}
+
 /* Section titles with gradient animations */
 .section__title--container {
   width: fit-content;
@@ -161,21 +225,32 @@ nav {
 
 .section__title--container::before {
   content: "";
-  background: linear-gradient(to right, transparent 20%, cyan, magenta);
+  background: linear-gradient(
+    to right,
+    transparent 20%,
+    var(--clr-accent),
+    var(--clr-accentTwo)
+  );
   display: block;
   width: 100%;
-  height: 4px;
+  height: 3px;
   transition: all 3s;
   opacity: 0.25;
   margin-right: 250px;
+  margin-bottom: 0.55em;
 }
 
 .section__title--container:hover::before {
   content: "";
-  background: linear-gradient(to right, transparent 20%, cyan, magenta);
+  background: linear-gradient(
+    to right,
+    transparent 20%,
+    var(--clr-accent),
+    var(--clr-accentTwo)
+  );
   display: block;
   width: 100%;
-  height: 4px;
+  height: 3px;
   transition: all 3s;
   opacity: 1;
   margin-right: 320px;
@@ -183,20 +258,30 @@ nav {
 
 .section__title--container::after {
   content: "";
-  background: linear-gradient(to left, transparent 20%, cyan, magenta);
+  background: linear-gradient(
+    to left,
+    transparent 20%,
+    var(--clr-accent),
+    var(--clr-accentTwo)
+  );
   display: block;
   width: 100%;
-  height: 4px;
+  height: 3px;
   transition: all 3s;
   opacity: 0.25;
 }
 
 .section__title--container:hover::after {
   content: "";
-  background: linear-gradient(to left, transparent 20%, cyan, magenta);
+  background: linear-gradient(
+    to left,
+    transparent 20%,
+    var(--clr-accent),
+    var(--clr-accentTwo)
+  );
   display: block;
   width: 100%;
-  height: 4px;
+  height: 3px;
   transition: all 3s;
   opacity: 1;
 }
