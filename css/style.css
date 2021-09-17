@@ -261,15 +261,19 @@ nav {
 /* My work section */
 
 .my-work {
-  max-width: 1000px;
   margin: 0 auto;
   background-color: var(--clr-dark);
   color: var(--clr-light);
 }
 
+.section__title--work {
+  text-align: center;
+}
+
 .section__subtitle--work {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
+  text-align: center;
 }
 
 .portfolio__subtitle::after {
@@ -302,8 +306,8 @@ nav {
       "paragraph-6 img-6"
       "img-7 paragraph-7"
       "paragraph-8 img-8";
-    grid-column-gap: 2em;
-    grid-row-gap: 2em;
+    grid-column-gap: 4em;
+    grid-row-gap: 8em;
   }
 
   .portfolio__item-1 {
