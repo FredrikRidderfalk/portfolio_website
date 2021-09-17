@@ -14,7 +14,6 @@
   --clr-light: hsl(0, 0%, 100%);
   --clr-dark: hsl(0, 0%, 19%);
   --clr-accent: hsl(170, 82%, 48%);
-  --clr-accentTwo: hsl(276, 47%, 40%);
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -219,7 +218,25 @@ nav {
 /* About me section */
 
 .about-me {
+  max-width: 0 auto;
   color: var(--clr-dark);
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+  }
+
+  .section__title--about,
+  .section__subtitle--about {
+    grid-column: 1;
+  }
+
+  .about-me__img {
+    grid-row: 1 / -1;
+    grid-column: 2;
+  }
 }
 
 /* Section titles with gradient animations */
@@ -234,8 +251,8 @@ nav {
   background: linear-gradient(
     to right,
     transparent 20%,
-    var(--clr-accent),
-    var(--clr-accentTwo)
+    var(--clr-light),
+    var(--clr-accent)
   );
   display: block;
   width: 100%;
@@ -251,8 +268,8 @@ nav {
   background: linear-gradient(
     to right,
     transparent 20%,
-    var(--clr-accent),
-    var(--clr-accentTwo)
+    var(--clr-light),
+    var(--clr-accent)
   );
   display: block;
   width: 100%;
@@ -267,8 +284,8 @@ nav {
   background: linear-gradient(
     to left,
     transparent 20%,
-    var(--clr-accent),
-    var(--clr-accentTwo)
+    var(--clr-light),
+    var(--clr-accent)
   );
   display: block;
   width: 100%;
@@ -282,8 +299,8 @@ nav {
   background: linear-gradient(
     to left,
     transparent 20%,
-    var(--clr-accent),
-    var(--clr-accentTwo)
+    var(--clr-light),
+    var(--clr-accent)
   );
   display: block;
   width: 100%;
