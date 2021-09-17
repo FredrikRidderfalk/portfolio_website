@@ -218,24 +218,43 @@ nav {
 /* About me section */
 
 .about-me {
-  max-width: 0 auto;
-  color: var(--clr-dark);
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 @media (min-width: 600px) {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 200px;
-  }
-
-  .section__title--about,
-  .section__subtitle--about {
-    grid-column: 1;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
   }
 
   .about-me__img {
-    grid-row: 1 / -1;
-    grid-column: 2;
+    box-shadow: var(--bs);
+  }
+
+  .section__title--about {
+    grid-area: title;
+  }
+
+  .section__subtitle--about {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
   }
 }
 
