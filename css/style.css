@@ -216,6 +216,12 @@ nav {
   }
 }
 
+/* About me section */
+
+.about-me {
+  color: var(--clr-dark);
+}
+
 /* Section titles with gradient animations */
 .section__title--container {
   width: fit-content;
