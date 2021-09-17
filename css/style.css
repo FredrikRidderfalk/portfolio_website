@@ -261,7 +261,6 @@ nav {
 /* My work section */
 
 .my-work {
-  margin: 0 auto;
   background-color: var(--clr-dark);
   color: var(--clr-light);
 }
