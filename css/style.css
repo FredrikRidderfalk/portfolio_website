@@ -294,9 +294,14 @@ nav {
   margin: 3em auto;
 }
 
+.portfolio__img {
+  margin-bottom: 4em;
+}
+
 @media (min-width: 600px) {
   .portfolio {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "img-1 paragraph-1"
       "paragraph-2 img-2"
@@ -307,7 +312,7 @@ nav {
       "img-7 paragraph-7"
       "paragraph-8 img-8";
     grid-column-gap: 4em;
-    grid-row-gap: 8em;
+    grid-row-gap: 4em;
   }
 
   .portfolio__item-1 {
