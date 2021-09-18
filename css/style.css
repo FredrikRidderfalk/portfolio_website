@@ -75,7 +75,6 @@ strong {
   color: var(--clr-dark);
   text-decoration: none;
   font-size: 1rem;
-  text-transform: lowercase;
   font-weight: var(--fw-bold);
   letter-spacing: 2px;
   transition: all 200ms ease-in-out;
@@ -242,6 +241,21 @@ nav {
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
+  }
+}
+
+/* typing animation */
+
+.section__subtitle--intro::after {
+  content: "";
+  padding-right: 4px;
+  animation: blink 0.5s step-end infinite alternate;
+  border-right: 3px solid;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
 
@@ -505,26 +519,4 @@ nav {
 .footer__link:hover,
 .social-list__link:hover {
   opacity: 0.75;
-}
-
-/* Typing demo */
-
-.typing-demo {
-  width: 15ch;
-  animation: typing 2s steps(12), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
 }
