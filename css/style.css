@@ -296,6 +296,10 @@ header {
   transition: transform 250ms ease-in-out;
 }
 
+.nav-toggle:focus {
+  outline: none;
+}
+
 .hamburger::before,
 .hamburger::after {
   content: "";
