@@ -212,14 +212,22 @@ header {
 .nav {
   position: fixed;
   background: var(--clr-dark);
+  opacity: 0.98;
   color: var(--clr-light);
   top: 0;
-  bottom: 0;
-  left: 0;
+  bottom: 50%;
+  left: 50%;
   right: 0;
   z-index: 100;
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+@media (min-width: 800px) {
+  .nav {
+    bottom: 50%;
+    left: 60%;
+  }
 }
 
 .nav__list {
@@ -228,7 +236,7 @@ header {
   height: 100%;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: left;
 }
 
 .nav__link {
