@@ -50,6 +50,7 @@ TxtRotate.prototype.tick = function () {
   } else if (this.isDeleting && this.txt === "") {
     this.isDeleting = false;
     this.loopNum++;
+    // delta defines the delay in ms between typing out text
     delta = 500;
   }
 
