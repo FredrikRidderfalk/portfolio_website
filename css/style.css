@@ -553,6 +553,7 @@ header {
 
   .portfolio__item-1 {
     grid-area: img-1;
+    background: #002a3f;
   }
 
   .portfolio__text-1 {
