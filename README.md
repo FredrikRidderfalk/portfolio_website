@@ -63,12 +63,12 @@ Users should be able to:
 
 ### Continued development
 
-I want to spend more time learning about accessibility and implementing additional measures for an inclusive experience. I look forward to finding new uses for the pseudo-elements ::before and ::after. Next step in development is to deploy the website.
+I want to spend more time learning about accessibility and implementing additional measures for an inclusive experience. I want to learn more about internationalization. I look forward to finding new uses for the pseudo-elements ::before and ::after. Next step in development is to deploy the website.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Nu Html Checker](https://validator.w3.org/nu/) - I ran my index.html through this conformance checker to catch any unintended mistakes.
+- [CSS Validation Service](https://jigsaw.w3.org/css-validator/) - I ran my style.css through this conformance checker to catch any unintended mistakes.
 
 ## Author
 
