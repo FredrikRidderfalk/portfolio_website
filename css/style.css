@@ -512,6 +512,7 @@ header {
 
 .portfolio__item {
   margin: 0 auto 4em;
+  height: fit-content;
 }
 
 .portfolio__text {
