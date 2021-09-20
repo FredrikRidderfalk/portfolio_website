@@ -21,13 +21,17 @@
 Users should be able to:
 
 - [x] View the optimal layout for the site depending on their device's screen size
-- [x] Enter the game app through age verification
-- [x] Play and restart the game as many times as they want
-<!-- - Choose between a green, red, or black table. -->
+- [x] Easily navigate through the site's links and buttons without mouse or trackpad using a clearly visible :focus outline.
+- [x] Access all aspects of the site regardless of browser.
+- [x] Navigate through the site by a sticky hamburger menu.
+- [x] Find out about my services.
+- [x] Find out about me.
+- [x] Navigate through a portfolio of my work.
+- [x] Find contact information.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](img/screenshot.png)
 
 ### Links
 
