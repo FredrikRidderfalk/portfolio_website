@@ -5,14 +5,13 @@
 - [Overview](#overview)
   - [The goal](#the-goal)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-<!-- - [Acknowledgments](#acknowledgments) -->
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -33,85 +32,38 @@ Users should be able to:
 
 ![](img/screenshot.png)
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ## My process
 
-- I organize my html classes using double\_\_underscore and double--dash to improve readability. This can make it easier to keep track of parent and children elements when working with the css.
-- <img> always has an alt="", but is left empty if unnecessary.
+- I organize my html classes using double underscore and double dash to improve readability. This can make it easier to keep track of parent and children elements when working with the css.
+- I have added extra padding for links and buttons with small hitboxes to facilitate higher accuracy when using a finger to navigate on a small screen.
+- I maintained high contrast ratios (13.1:1, 7.74:1) throughout the website, passing all WCAG tests. Tested using [WebAIM](https://webaim.org/resources/contrastchecker/?fcolor=000000&bcolor=16DFBD).
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS
 - Flexbox
-<!-- - CSS Grid -->
+- CSS Grid
 - Mobile-first workflow
-    <!-- - [React](https://reactjs.org/) - JS library -->
-    <!-- - [Next.js](https://nextjs.org/) - React framework -->
-  <!-- - [Styled Components](https://styled-components.com/) - For styles -->
+- JavaScript
 
 ### What I learned
 
-How I can work with the css pseudo-elements ::before and ::after. They don't need to be written with double ::, one : will still run, but standard practice nowadays is to use the double ::.
+- WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. WCAG 2.1 requires a contrast ratio of at least 3:1 for graphics and user interface components (such as form input borders). WCAG Level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text. Large text is defined as 14 point (typically 18.66px) and bold or larger, or 18 point (typically 24px) or larger.
 
-<!-- - How to work with if/else statements.
-- How to work with for-loops.
-- Practiced working with logical operators. -->
+- How I can work with the css pseudo-elements ::before and ::after. They don't need to be written with double ::, one : will still run, but standard practice nowadays is to use the double ::.
 
-Instead of trying to make an animation using the animation property and @keyframes, I used transition.
+- Instead of trying to make most animations using the animation property and @keyframes, I used the transition property which worked much better in several cases.
 
-<!-- ```html
-<h1>Some HTML code I'm proud of</h1>
-```
+- How to code a typewriter carousel in JS.
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-``` -->
+- I learned how to use CSS grid to produce alternating sections of images and text.
 
-I learned that instead of making a nested if-statement where two conditions need to be met, we can use the && operator inside the parentheses.
-
-```js
-// Don't use this nesting
-if (hasCompletedCourse === true) {
-  if (givesCertificate === true) {
-    generateCertificate();
-  }
-}
-
-// Use this instead
-if (hasBlackJack && isAlive) {
-  gameOver();
-}
-
-// Which is the same as
-if (hasBlackJack === true && isAlive === false) {
-  gameOver();
-}
-
-// This is how we get a random integer in any range
-function getRandomCard() {
-  let randomNumer = Math.floor(Math.random() * 13) + 1;
-  if (randomNumer > 10) {
-    return 10;
-  } else if (randomNumer === 1) {
-    return 11;
-  } else {
-    return randomNumer;
-  }
-}
-```
-
-<!-- If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more. -->
+- I learned how to make a typing-animation using pure CSS.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to spend more time learning about accessibility and implementing additional measures for an inclusive experience. I look forward to finding new uses for the pseudo-elements ::before and ::after. Next step in development is to deploy the website.
 
 ### Useful resources
 
@@ -120,12 +72,10 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- GitHub - [@FredrikRidderfalk](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Coming soon!](#)
+- GitHub - [@FredrikRidderfalk](https://github.com/FredrikRidderfalk)
+- Twitter - [@yourusername](https://twitter.com/Ridderfalk)
 
-<!-- ## Acknowledgments
+## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.** -->
+My acknowledgements go out to the team at Scrimba. Enrolling in your courses made this project possible. I learned a lot for this project from Kevin Powell.
