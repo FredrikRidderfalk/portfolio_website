@@ -638,8 +638,6 @@ header {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  -webkit-animation: typing 1s linear infinite alternate;
-  -moz-animation: Typing 1s linear infinite alternate;
   animation: typing 1s linear infinite alternate;
 }
 
@@ -651,7 +649,7 @@ header {
   }
   25% {
     background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 12px 0px 0px 0px rgba(255, 255, 255, 2),
+    box-shadow: 12px 0px 0px 0px rgba(255, 255, 255, 0.2),
       24px 0px 0px 0px rgba(255, 255, 255, 0.2);
   }
   75% {
